@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Settings | Autonomous Career Agency AI.inc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #f8fafc; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .control-card { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; }
+        input[type="range"] { accent-color: #3b82f6; }
+    </style>
+</head>
+<body class="antialiased py-12 px-6">
+
+    <div class="max-w-2xl mx-auto">
+        <div class="flex items-center justify-between mb-10">
+            <h1 class="text-2xl font-black uppercase italic tracking-tighter">Agent Config <span class="text-blue-500">v4.2</span></h1>
+            <a href="dashboard.html" class="mono text-[10px] text-slate-500 hover:text-white transition underline uppercase tracking-widest">Back to Dashboard</a>
+        </div>
+
+        <section class="control-card p-6 mb-6">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="mono text-xs font-black text-blue-400 uppercase tracking-widest">LVM Vision Sync / Stealth</h2>
+                <span class="bg-green-500/10 text-green-500 text-[9px] px-2 py-1 rounded font-bold uppercase">Human-Mimic Active</span>
+            </div>
+            
+            <div class="space-y-8">
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <label class="text-xs font-bold uppercase">Typing Cadence Variance</label>
+                        <span class="mono text-xs text-blue-500">85ms - 240ms</span>
+                    </div>
+                    <input type="range" class="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer" min="0" max="100" value="75">
+                </div>
+
+                <div class="flex items-center justify-center p-4 bg-slate-900/50 rounded-lg border border-slate-800">
+                    <span class="text-[10px] text-slate-500 uppercase tracking-widest">Randomizing Browser Fingerprints...</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="control-card p-6 mb-6">
+            <h2 class="mono text-xs font-black text-slate-500 uppercase tracking-widest mb-6">LangGraph Reasoning Depth</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <button class="border border-slate-800 p-4 text-center rounded hover:border-blue-500">
+                    <span class="block text-[10px] font-black">FAST</span>
+                </button>
+                <button class="border border-blue-500 bg-blue-500/5 p-4 text-center rounded">
+                    <span class="block text-[10px] font-black text-blue-500">BALANCED</span>
+                </button>
+                <button class="border border-slate-800 p-4 text-center rounded hover:border-blue-500">
+                    <span class="block text-[10px] font-black">DEEP</span>
+                </button>
+            </div>
+        </section>
+
+        <button class="w-full mt-10 bg-white text-black py-4 font-black uppercase text-xs tracking-[0.2em] hover:bg-blue-600 hover:text-white transition-all">
+            Update Agent Parameters
+        </button>
+    </div>
+
+</body>
+</html>
